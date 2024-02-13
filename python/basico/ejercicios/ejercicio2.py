@@ -1,17 +1,12 @@
-# pedilr al usuario que introduzca una frase
-# 1:
 texto = input('Ingresa un texto: ')
-cantidad_palabras = len(texto.split(' '))
-tiempo_normal = cantidad_palabras / 2
 
-print(f'El usuario introdujo {cantidad_palabras} palabra(s)')
-print(f'Una persona normal tardaria {tiempo_normal} segundo(s) en decirla')
+numero_palabras = len(texto.split(' '))
+tiempo_en_decirlas = numero_palabras / 2
+tiempo_dalto = tiempo_en_decirlas * 0.7
+print('')
 
-
-# 2:
-if tiempo_normal > 60:
-    print('Mucho texto')
-    
-# 3:
-mi_tiempo = tiempo_normal * 0.7
-print(f'Yo tardaria en decirlo {mi_tiempo} segundo(s) en decirla')
+if tiempo_en_decirlas > 60:
+    print('Pará flaco tampoco te pedí un testamentos' + {'\n'})
+else: 
+    print(f'Dijiste {numero_palabras} palabra(s) y tardaste {round(tiempo_en_decirlas,2)} segundo(s) en decirlas  {'\n'}')
+    print(f'Dijiste {numero_palabras} palabra(s) y dalto tardaría {round(tiempo_dalto,2)} segundo(s) en decirlas  {'\n'}')
