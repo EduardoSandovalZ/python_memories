@@ -1,26 +1,17 @@
-def asignar_compañeros(numero_asistentes):
-    lista_alumnos = []
-    for alumno in range(numero_asistentes):
-        nombre = input(f'Proporciona el nombre del alumno {alumno+1}: ').title()
-        edad = int(input(f'Proporciona la edad del alumno {alumno+1}: '))
-        tupla_temporal = (nombre,edad)
-        lista_alumnos.append(tupla_temporal)
-    #funcion sorte te ayuda a order los valores de una lista de listas
-    #lista_alumnos = sorted(lista_alumnos, key=lambda x: x[1])
-    lista_alumnos.sort(key=lambda x:x[1])
-    asistente = lista_alumnos[0]
-    profesor = lista_alumnos[-1]
-    return asistente,profesor
-
-numero_alumnos = int(input(('Prorciona el numero de alumnos: ')))
-asistente,profesor = asignar_compañeros(numero_alumnos)
-print(f'El asistente será: {asistente} y el maestro será {profesor}')
+def define_role(number_students):
+    list_student= []
+    for student in range(number_students):
+        name = input(f'Proporcione el nombre del alumno {student+1}: ').title()
+        age =  int(input(f'Proporcione el nombre del alumno {student+1}: '))
+        list_student.append((name,age))
+    list_student.sort(key=lambda x:x[1])
+    teacher = list_student[-1]
+    assistant = list_student[0]
+    return teacher,assistant
     
+    
+number_students = int(input('Proporcione el numero de alumnos: '))
+teacher,assistant = define_role(number_students)
 
-
-
-
-
-
-
-
+print(f'El maestro es {teacher[0]} y tiene {teacher[1]}')
+print(f'El nombre del asistente es {assistant[0]} y  tiene {assistant[1]}')

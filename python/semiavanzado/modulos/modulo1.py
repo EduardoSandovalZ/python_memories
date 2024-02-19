@@ -1,10 +1,11 @@
 # # Forma 1, tratarlo como un metodo
-import modulo_saludar
-# Mostramos todos los metodos disponibles en nuestro modulo
-print(dir(modulo_saludar))
+import funciones_chidas.saludar as saludar
 
-saludo = modulo_saludar.saludar('Juan')
-insulto = modulo_saludar.insultar('Raul')
+# Mostramos todos los metodos disponibles en nuestro modulo
+print(dir(saludar))
+print(saludar.__name__)
+saludo = saludar.saludar('Juan')
+insulto = saludar.insultar('Raul')
 
 print(saludo)
 print(insulto)
@@ -12,10 +13,15 @@ print(insulto)
 
 
 # forma 2, de esta manera mantenemos la funcion
-from modulo_saludar import saludar,insultar 
+
+from funciones_chidas.saludar import *
 
 saludo = saludar('Alberto')
 insulto = insultar('Eduardo')
 print(saludo)
 print(insulto)
 
+# Para enrutar debemos de seleccionar la carpeta y separarlas por puntos
+'''
+carpeta_raiz.carpeta_rama.nombre_del_modulo
+'''
