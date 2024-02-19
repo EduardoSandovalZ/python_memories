@@ -5,6 +5,8 @@ lista = list(['hola','eduardo',23])
 print(f'Lista original: {lista}')
 lista2 = ['hola','eduardo',23]
 
+
+
 # Contar los elementos de la lista
 print(f'Numero de elementos de la lista: {len(lista)}')
 
