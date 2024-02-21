@@ -15,8 +15,8 @@ for numero in numeros:
 # Recorrer una cadena
 cadena = 'Hola Eduardo'
 
-# for letra in cadena:
-#     print(letra)
+for letra in cadena:
+    print(letra)
     
     
 # Ahora, podemos reducir lineas de codigo usando for

@@ -13,6 +13,6 @@ archivo.close()
 '''
 Forma correcta
 '''
-with open('C:\\Users\\EDUARDOSANDOVALZORRI\\Documents\\Dt\\python_memories\\python\\semiavanzado\\TXT\\txt_mal.txt',"w",encoding='utf-8'):
+with open('C:\\Users\\EDUARDOSANDOVALZORRI\\Documents\\Dt\\python_memories\\python\\semiavanzado\\TXT\\txt_bien.txt',"w",encoding='utf-8') as archivo2:
     for numero in lista_numeros:
-        archivo.writelines(str(numero)+'\n')
+        archivo2.write(str(numero)+'\n')

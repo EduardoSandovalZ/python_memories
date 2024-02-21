@@ -1,0 +1,20 @@
+Forma incorrecta de escribir
+Eduardo Sandoval
+Alberto Zorrilla
+Juan Lopez
+Molly Paez
+
+Forma correcta de escribir
+---------------------------
+El nombre es: Eduardo
+El apellido es: Sandoval
+---------------------------
+El nombre es: Alberto
+El apellido es: Zorrilla
+---------------------------
+El nombre es: Juan
+El apellido es: Lopez
+---------------------------
+El nombre es: Molly
+El apellido es: Paez
+---------------------------
